@@ -1,0 +1,73 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+$govuk-font-family: 'Roboto', sans-serif; 
+$govuk-font-family-tabular: 'Roboto', sans-serif;
+$govuk-canvas-background-colour: rgb(240, 235, 216);
+
+// Import GOV.UK Frontend
+@import "node_modules/govuk-frontend/all";
+
+// Patterns that aren't in Frontend
+@import "patterns/check-your-answers";
+@import "patterns/step-by-step-navigation";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+body {
+    font-family: $govuk-font-family;    
+}
+
+.govuk-header__container {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.govuk-header__logo {
+    float: right;
+}
+
+.govuk-header__link--homepage {
+    font-size:20px;
+    line-height:20px;
+}
+.govuk-header__link--service-name{
+    line-height:50px;
+}
+
+.govuk-header {
+    background-color: rgb(18, 47, 72);
+    color: white;
+}
+
+.govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-heading-s, govuk-heading-xs {
+    font-family: 'Raleway', sans-serif;
+    & * {
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+.eduk-navigation-wrapper {    
+    border-top: solid 1px white;
+}
+
+
+.eduk-navigation ul {
+    padding-left:0;
+    display: block;
+}
+
+.eduk-navigation li {
+    display:inline;
+    padding: 15px 20px;
+    font-weight: 700;
+}
+
+.eduk-navigation li:hover{
+    background-color: rgb(49, 87, 119);   
+}
+
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
