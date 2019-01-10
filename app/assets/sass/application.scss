@@ -66,11 +66,19 @@ h1, h2, h3, h4, h5, .govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govu
 
 .eduk-navigation li {
     display:inline-block;
-    padding: 15px 20px;
-    font-weight: 700;
+    padding:0;
+    margin:0;
 }
 
-.eduk-navigation li:hover{
+.eduk-navigation li a {
+    display:block;
+    padding: 15px 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color:white;
+}
+
+.eduk-navigation li a:hover{
     background-color: rgb(49, 87, 119);   
 }
 
