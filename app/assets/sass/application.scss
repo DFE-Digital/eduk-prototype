@@ -42,11 +42,15 @@ body {
     color: white;
 }
 
-.govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-heading-s, govuk-heading-xs {
-    font-family: 'Raleway', sans-serif;
+h1, h2, h3, h4, h5, .govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-heading-s, govuk-heading-xs {
+    font-family: 'Raleway', sans-serif !important;
     & * {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Raleway', sans-serif !important;
     }
+}
+
+.gem-c-share-links__link, .gem-c-document-list__item-title {
+    font-family: $govuk-font-family;
 }
 
 .eduk-navigation-wrapper {    
@@ -60,7 +64,7 @@ body {
 }
 
 .eduk-navigation li {
-    display:inline;
+    display:inline-block;
     padding: 15px 20px;
     font-weight: 700;
 }
@@ -69,5 +73,7 @@ body {
     background-color: rgb(49, 87, 119);   
 }
 
-
+.visually-hidden {
+    display:none;
+}
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
