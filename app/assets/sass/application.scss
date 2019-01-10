@@ -40,9 +40,10 @@ body {
 .govuk-header {
     background-color: rgb(18, 47, 72);
     color: white;
+    border-bottom: none;
 }
 
-h1, h2, h3, h4, h5, .govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-heading-s, govuk-heading-xs {
+h1, h2, h3, h4, h5, .govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-heading-s, .govuk-heading-xs, .gem-c-highlight-boxes__title, .app-c-email-link {
     font-family: 'Raleway', sans-serif !important;
     & * {
         font-family: 'Raleway', sans-serif !important;
